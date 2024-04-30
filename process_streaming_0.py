@@ -80,7 +80,8 @@ def stream_row(input_file_name, address_tuple):
         # and assign it to a variable named `sock_object`
         sock_object = socket.socket(ADDRESS_FAMILY, SOCKET_TYPE)
         
-        for row in reader:
+        # Read rows in reverse order
+        for row in reversed(list(reader)):
             MESSAGE = prepare_message_from_row(row)
             sock_object.sendto(MESSAGE, address_tuple)
             logging.info(f"Sent: {MESSAGE} on port {PORT}. Hit CTRL-c to stop.")
@@ -100,3 +101,4 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"An error occurred: {e}")
 
+# Modified by Jake Rood on 04/30/2024
