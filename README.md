@@ -1,6 +1,7 @@
 # streaming-01-getting-started
 Name: Jake Rood
-Data: 04-30-2024
+
+Date: 04-30-2024
 
 > Get started with Python for streaming analytics
 
