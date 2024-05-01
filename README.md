@@ -5,6 +5,8 @@ Date: 04-30-2024
 
 > Get started with Python for streaming analytics
 
+In this project, we execute Python code to illustrate batch processing versus stream processing.
+
 We assume no prior programming experience and that you want to 
 get productive as quickly as possible.
 
